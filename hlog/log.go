@@ -36,7 +36,7 @@ var (
 	log_ws    = map[int]*logFileWriter{}
 
 	logDir      = flag.String("log_dir", "", "If non-empty, write log files in this directory")
-	logToStderr = flag.Bool("logtostderr", false, "log to standard error instead of files")
+	logToStderr = flag.Bool("logtostderr", true, "log to standard error instead of files")
 	minLogLevel = flag.Int("minloglevel", 1, "Messages logged at a lower level than this"+
 		" don't actually get logged anywhere")
 	logToLevels = flag.Bool("logtolevels", false, "Write log to multi level files")
